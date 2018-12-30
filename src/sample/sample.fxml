@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?scenebuilder-background-color 0x00a95eff?>
+
+<?import javafx.scene.control.ToggleGroup?>
+<AnchorPane id="AnchorPane" blendMode="MULTIPLY" cache="true" cacheHint="DEFAULT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="" fx:controller="sample.Controller" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TabPane layoutX="7.0" layoutY="0.0" prefHeight="400.0" prefWidth="593.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Customer">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Hyperlink layoutX="117.0" onAction="#Login_Guest" layoutY="51.0" prefHeight="257.0" prefWidth="442.0" text="Login as Guest" textFill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0x000000ff 100.0%)">
+                                    <font>
+                                        <Font size="50.0" />
+                                    </font>
+                                </Hyperlink>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Admin">
+                    <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <fx:define>
+                                    <ToggleGroup fx:id="Admin_Selection" />
+                                </fx:define>
+                                <Label layoutX="51.0" layoutY="64.0" prefHeight="49.0" prefWidth="323.0" text="Who Are You?" textFill="#7266ff">
+                                    <font>
+                                        <Font name="System Bold" size="35.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton layoutX="213.0" fx:id="f1" onAction="#WarehouseLogin" toggleGroup="$Admin_Selection" layoutY="152.0" mnemonicParsing="false" text="WareHouse Admin" textFill="#f53030">
+                                    <font>
+                                        <Font size="25.0" fx:id="x1" />
+                                    </font>
+                                </RadioButton>
+                                <RadioButton font="$x1" toggleGroup="$Admin_Selection" layoutX="213.0" layoutY="195.0" mnemonicParsing="false" onAction="#StoreLogin" text="Store Admin" textFill="#eb0c0c" />
+                                <RadioButton font="$x1" toggleGroup="$Admin_Selection" layoutX="213.0" layoutY="242.0" mnemonicParsing="false" onAction="#SuperUserLogin" text="Super User" textFill="#e10c0c" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
