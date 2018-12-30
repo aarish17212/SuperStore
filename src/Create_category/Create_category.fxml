@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>-->
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane id="AnchorPane" fx:controller="Create_category.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="7.0" layoutY="34.0" prefHeight="49.0" prefWidth="394.0" text="Create Category/Sub_Category" textFill="#666668">
+            <font>
+                <Font name="Al Bayan Plain" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="101.0" layoutY="125.0" prefHeight="26.0" prefWidth="107.0">
+            <font>
+                <Font size="20.0" fx:id="x1" />
+            </font>
+        </Label>
+        <TextField fx:id="t1" layoutX="222.0" layoutY="110.0" />
+        <MenuBar layoutX="-2.0" layoutY="3.0" prefHeight="22.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Log out" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox id="HBox" alignment="CENTER_LEFT" layoutX="7.0" layoutY="368.0" prefHeight="0.0" prefWidth="589.0" spacing="5.0">
+            <children>
+                <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <!--<Icon content="TIMER" layoutY="-1.0" />-->
+                    </children>
+                </Pane>
+                <Button mnemonicParsing="false" onAction="#close" text="Submit" />
+                <Button mnemonicParsing="false" onAction="#close2" text="Cancel" textFill="#4853cf" />
+                <Label maxWidth="-1.0" HBox.hgrow="NEVER">
+                    <font>
+                        <Font size="11.0" fx:id="x3" />
+                    </font>
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                    </textFill>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+        <Text layoutX="122.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, bLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, b" wrappingWidth="375.9830722808838" />
+    </children>
+</AnchorPane>
