@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.AutoCompleteTextField?>-->
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane id="AnchorPane" fx:controller="Create_Warehouse.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="7.0" layoutY="34.0" prefWidth="336.0" text="Create Warehouse" textFill="#666668">
+            <font>
+                <Font name="Al Bayan Plain" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="101.0" layoutY="125.0" prefHeight="26.0" prefWidth="107.0">
+            <font>
+                <Font size="20.0" fx:id="x1" />
+
+            </font>
+        </Label>
+
+        <TextField text="Warehouse Name" fx:id="t1" layoutX="222.0" layoutY="110.0" />
+        <TextField text="Warehouse_Admin Name" fx:id="t2" layoutX="222.0" layoutY="186.0" />
+        <MenuBar layoutX="-2.0" layoutY="3.0" prefHeight="22.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Log out" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox id="HBox" alignment="CENTER_LEFT" layoutX="7.0" layoutY="368.0" prefHeight="32.0" prefWidth="592.0" spacing="5.0">
+            <children>
+                <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <!--<Icon content="TIMER" layoutY="-1.0" />-->
+                    </children>
+                </Pane>
+                <Label maxWidth="-1.0" text="Super_user Name" HBox.hgrow="NEVER">
+                    <font>
+                        <Font size="11.0" fx:id="x3" />
+                    </font>
+                    <textFill>
+                        <Color blue="0.625" green="0.625" red="0.625" fx:id="x4" />
+                    </textFill>
+                </Label>
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+        <!--<AutoCompleteTextField floatText="Admin_id" layoutX="222.0" layoutY="265.0" />-->
+        <Button layoutX="335.0" onAction="#Submit" layoutY="327.0" mnemonicParsing="false" text="Submit" />
+        <Button layoutX="204.0" onAction="#Back" layoutY="327.0" mnemonicParsing="false" text="Cancel" textFill="#4853cf" />
+    </children>
+</AnchorPane>
