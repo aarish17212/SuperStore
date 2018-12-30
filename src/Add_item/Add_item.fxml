@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.Icon?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:controller="Add_item.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="7.0" layoutY="34.0" prefWidth="336.0" text="Create Item" textFill="#666668">
+            <font>
+                <Font name="Al Bayan Plain" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="101.0" layoutY="125.0" prefHeight="26.0" prefWidth="107.0">
+            <font>
+                <Font size="20.0" fx:id="x1" />
+            </font>
+        </Label>
+        <MenuBar layoutX="-2.0" layoutY="3.0" prefHeight="22.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Log out" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox id="HBox" alignment="CENTER_LEFT" layoutX="7.0" layoutY="368.0" prefHeight="32.0" prefWidth="592.0" spacing="5.0">
+            <children>
+                <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <!--<Icon content="TIMER" layoutY="-1.0" />-->
+                    </children>
+                </Pane>
+            </children>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </HBox>
+        <TextField fx:id="t1" layoutX="215.0" layoutY="125.0" />
+        <TextField fx:id="t2" layoutX="215.0" layoutY="165.0" />
+        <TextField fx:id="t3" layoutX="220.0" layoutY="200.0" />
+        <TextField fx:id="t4" layoutX="215.0" layoutY="253.0" />
+        <TextField fx:id="t5" layoutX="215.0" layoutY="305.0" />
+        <TextField fx:id="t6" layoutX="215.0" layoutY="83.0" />
+        <Label layoutX="94.0" layoutY="100.0" prefHeight="18.0" prefWidth="58.0" text="Name" />
+        <Label layoutX="94.0" layoutY="129.0" text="Quantity" />
+        <Label layoutX="94.0" layoutY="169.0" text="H" />
+        <Label layoutX="94.0" layoutY="204.0" text="D" />
+        <Label layoutX="94.0" layoutY="257.0" text="K" />
+        <Label layoutX="94.0" layoutY="322.0" text="Description" />
+        <Button layoutX="459.0" onAction="#close" layoutY="347.0" mnemonicParsing="false" text="Submit" />
+        <Button layoutX="533.0" layoutY="347.0" onAction="#close2" mnemonicParsing="false" text="Cancel" textFill="#4853cf" />
+    </children>
+</AnchorPane>
